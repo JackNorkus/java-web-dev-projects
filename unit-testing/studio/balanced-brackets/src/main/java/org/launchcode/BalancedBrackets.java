@@ -28,6 +28,9 @@ public class BalancedBrackets {
                 brackets--;
             }
         }
+        if (str.indexOf("[") > str.indexOf("]")) {
+            return false;
+        }
         return brackets == 0;
     }
 }
